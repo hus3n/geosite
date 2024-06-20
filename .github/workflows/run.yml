@@ -130,7 +130,7 @@ jobs:
           sha256sum GeoIP.db > GeoIP.db.sha256sum
 
       - name: Release and upload assets
-        uses: softprops/action-gh-release@v0.1.15
+        uses: softprops/action-gh-release@v2.0.6
         with:
           name: ${{ env.RELEASE_NAME }}
           tag_name: ${{ env.TAG_NAME }}
